@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --color1: #0B0A07;
+    --color2: #9792E3;
+    --color3: #17BEBB;
+    --color4: #2C666E;
+    --color5: #A393BF;
+}
