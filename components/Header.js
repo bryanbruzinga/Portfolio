@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <nav className={styles.navHeader}>
         <ul>
           <li>
@@ -25,9 +25,10 @@ const Header = () => {
       </nav>
       <div className={styles.titleGroup}>
         <h1 className={styles.title}>Bryan da Silva Bruzinga</h1>
-        <h2 className={styles.subtitle}>Um desenvolvedor Front-End</h2>
+        <h2 className={styles.subtitle}>Desenvolvedor Front-End</h2>
+        <Link href="/projetos">Veja meus projetos</Link>
       </div>
-    </div>
+    </header>
   );
 };
 

@@ -12,17 +12,36 @@
 .navHeader ul li a {
     padding: 1rem;
     margin: 1rem;
+    color: #fff;
 }
 .titleGroup {
-    margin-top: 7rem;
+    margin-top: 12rem;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .title {
     font-size: 4rem;
 }
 .subtitle {
     font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 .title,
 .subtitle {
-    color: var(--color2);
+    color: var(--text);
+}
+
+.titleGroup a {
+    padding: 1.5rem 2.5rem;
+    background: var(--button);
+    border-radius: 1rem;
+    transition: .3s;
+    color: black;
+}
+
+.titleGroup a:hover {
+    background: var(--buttonHover);
+    transition: .2s;
 }

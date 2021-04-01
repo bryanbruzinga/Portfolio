@@ -21,9 +21,9 @@ a {
 }
 
 :root {
-    --color1: #0B0A07;
-    --color2: #9792E3;
-    --color3: #17BEBB;
-    --color4: #2C666E;
-    --color5: #A393BF;
+    --title: #758173;
+    --background: #080708;
+    --text: #F5EFFF;
+    --button: #47E5BC;
+    --buttonHover: #81E4DA;
 }
