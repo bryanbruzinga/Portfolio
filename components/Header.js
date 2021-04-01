@@ -1,29 +1,31 @@
 import Link from "next/link";
-import React from "react";
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <div>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/Projetos">Home</Link>
-            </li>
-            <li>
-              <Link href="/">Quem sou eu?</Link>
-            </li>
-            <li>
-              <Link href="/">Projetos</Link>
-            </li>
-            <li>
-              <Link href="/">Tecnologias</Link>
-            </li>
-            <li>
-              <Link href="/">Entre em contato</Link>
-            </li>
-          </ul>
-        </nav>
+    <div className={styles.header}>
+      <nav className={styles.navHeader}>
+        <ul>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/">Quem sou eu?</Link>
+          </li>
+          <li>
+            <Link href="/projetos">Projetos</Link>
+          </li>
+          <li>
+            <Link href="/">Tecnologias</Link>
+          </li>
+          <li>
+            <Link href="/">Entre em contato</Link>
+          </li>
+        </ul>
+      </nav>
+      <div className={styles.titleGroup}>
+        <h1 className={styles.title}>Bryan da Silva Bruzinga</h1>
+        <h2 className={styles.subtitle}>Um desenvolvedor Front-End</h2>
       </div>
     </div>
   );
