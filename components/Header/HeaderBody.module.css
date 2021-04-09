@@ -1,5 +1,4 @@
-.titleGroup {
-    margin-top: 12rem;
+.container {
     max-width: 700px;
     display: flex;
     flex-direction: column;
@@ -17,15 +16,23 @@
     color: var(--text);
 }
 
-.titleGroup a {
-    padding: 1.5rem 2.5rem;
+.githubLink::before {
+    content: '' ;
+    height: 30px;
+    width: 30px;
+    background: url('../../public/github.svg') no-repeat center center;
+    z-index: 3;
+}
+
+.container a {
+    padding: 1rem 2rem;
     background: var(--button);
     border-radius: 1rem;
     transition: .3s;
     color: black;
 }
 
-.titleGroup a:hover {
+.container a:hover {
     background: var(--buttonHover);
     transition: .2s;
 }

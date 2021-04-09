@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Site para personal trainer",
+        "Tecnologias": "HTML, CSS, Javascript",
+        "img": "/",
+        "link": "https://projeto-site-personal.vercel.app/"
+    },
+    {
+        "name": "E-commerce de Games",
+        "Tecnologias": "React",
+        "img": "/",
+        "link": "https://inspiring-snyder-8dfdc3.netlify.app/"
+    },
+    {
+        "name": "Pokémon",
+        "Tecnologias": "VueJs 2",
+        "img": "/",
+        "link": "https://pokemon-sable.vercel.app/"
+    },
+    {
+        "name": "Flappy Bird Clone",
+        "Tecnologias": "HTML, CSS, Javascript",
+        "img": "/",
+        "link": "https://bryanbruzinga.github.io/FlappyBird/"
+    },
+    {
+        "name": "Dashboard para ArcHOffice",
+        "Tecnologias": "React, Material UI",
+        "img": "/",
+        "link": "https://arch.vercel.app/"
+    },
+    {
+        "name": "Site de Advocacia",
+        "Tecnologias": "HTML, CSS, Javascript, Bootstrap",
+        "img": "/",
+        "link": "https://bryanbruzinga.github.io/Site-Bootstrap-5/"
+    }
+]

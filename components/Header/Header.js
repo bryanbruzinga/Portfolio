@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
-import HeaderBody from "./HeaderBody";
 
 const Header = () => {
   return (
@@ -23,7 +22,6 @@ const Header = () => {
             <Link href="/">Entre em contato</Link>
           </li>
         </ul>
-        <HeaderBody />
       </nav>
     </header>
   );

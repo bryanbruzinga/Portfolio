@@ -6,6 +6,7 @@ const projetos = () => {
   return (
     <div>
       <Header />
+      Projetos
       <Footer />
     </div>
   );
