@@ -4,18 +4,23 @@ import styles from "./HeaderBody.module.css";
 
 const HeaderBody = () => {
   return (
-    <div className={styles.container}>
-      <h2>Olá, eu sou</h2>
-      <h1 className={styles.title}>Bryan da Silva Bruzinga</h1>
-      <h2 className={styles.subtitle}>Desenvolvedor Front-End</h2>
-      <Link
-        className={styles.githubLink}
-        href="https://github.com/bryanbruzinga"
-        target="_blank"
-      >
-        Meu Github
-      </Link>
-    </div>
+    <section className={styles.container}>
+      <div className={styles.presentation}>
+        <div className={styles.name}>
+          <h2>Olá, eu sou</h2>
+          <h1>Bryan da Silva Bruzinga</h1>
+          <h2>Desenvolvedor Front-End</h2>
+        </div>
+        <Link href="https://github.com/bryanbruzinga">
+          <a>
+            <img src="github.svg" alt="Github" />
+          </a>
+        </Link>
+      </div>
+      <div>
+        <img className={styles.img} src="arch.png" alt="image" />
+      </div>
+    </section>
   );
 };
 
