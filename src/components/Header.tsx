@@ -1,25 +1,25 @@
 import Link from "next/link";
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <nav className={styles.navHeader}>
+    <header className={styles.headerContainer}>
+      <nav>
         <ul>
           <li>
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/">Quem sou eu?</Link>
+            <Link href="/about">Sobre mim</Link>
           </li>
           <li>
-            <Link href="/projetos">Projetos</Link>
+            <Link href="/projects">Projetos</Link>
           </li>
           <li>
-            <Link href="/">Tecnologias</Link>
+            <Link href="/techs">Tecnologias</Link>
           </li>
           <li>
-            <Link href="/">Entre em contato</Link>
+            <Link href="/contact">Entre em contato</Link>
           </li>
         </ul>
       </nav>

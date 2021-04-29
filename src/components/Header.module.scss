@@ -1,0 +1,24 @@
+.headerContainer {
+    height: 10vh;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    nav {
+        width: 70rem;
+        display: flex;
+        justify-content: flex-end;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            a {
+                padding: .5rem 1rem;
+                font-size: 1.125rem;
+            }
+        }
+    }
+}
