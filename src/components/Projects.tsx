@@ -1,7 +1,12 @@
 import React from "react";
 
 const Projects = () => {
-  return <section>Projetos</section>;
+
+  return (
+    <section>
+      <h2>Projetos</h2>
+    </section>
+  );
 };
 
 export default Projects;
