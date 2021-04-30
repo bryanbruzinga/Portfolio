@@ -1,0 +1,19 @@
+.sectionAbout {
+    height: 90vh;
+
+    h1 {
+        color: white;
+        font-size: 2rem;
+        font-family: var(--primary-font);
+    }
+
+    .imgPhoto {
+        border-radius: 50%;
+    }
+
+    p {
+        color: white;
+        font-family: var(--primary-font);
+        font-size: 1.125rem;
+    }
+}

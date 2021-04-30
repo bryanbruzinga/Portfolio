@@ -2,9 +2,9 @@ import React from 'react'
 
 const index = () => {
     return (
-        <div>
-            Tecnologias
-        </div>
+        <section>
+            <h1>Tecnologias que utilizo</h1>
+        </section>
     )
 }
 
