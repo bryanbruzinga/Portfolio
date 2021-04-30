@@ -3,6 +3,6 @@
     flex-direction: column;
 
     main {
-        background: url('/background.jpg');
+        background: var(--background);
     }
 }

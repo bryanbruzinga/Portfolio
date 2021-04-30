@@ -1,0 +1,25 @@
+{
+    "projetos": [
+        {
+            "id": "E-commerce de Games",
+            "img": "",
+            "description": "Aplicativo simples de E-commerce com operações de adicionar e remover ítens do carrinho e organizar a lista de produtos.",
+            "github": "https://github.com/bryanbruzinga/E-commerce-Game-React",
+            "techs": "React, CSS"
+        },
+        {
+            "id": "Template Personal Trainer",
+            "img": "",
+            "description": "Primeiro site construído sem framework, utilizando apenas da base, com animações simples baseado num template de Wordpress que vi na web.",
+            "github": "https://github.com/bryanbruzinga/Site-Personal-Trainer",
+            "techs": "HTML, CSS, Javascript"
+        },
+        {
+            "id": "Pokemon",
+            "img": "",
+            "description": "App que lista todos os pokémons disponíveis, faz o consumo da Api do Pokemon, cada Pokémon possui suas próprias informações.",
+            "github": "https://github.com/bryanbruzinga/Pokemon",
+            "techs": "VueJs 2, CSS"
+        }
+    ]
+}
