@@ -1,3 +1,23 @@
 .sectionContact {
     height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+
+    h1 {
+        color: white;
+        font-family: var(--primary-font);
+        font-size: 2rem;
+        grid-column: 1/3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    a {
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
 }

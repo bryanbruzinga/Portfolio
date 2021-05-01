@@ -2,25 +2,27 @@
     height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
 
     .mainLeft {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        color: #EBEBED;
+        color: var(--text);
         height: 100%;
         padding-left: 2rem;
-        animation: slideDown .8s;
 
         h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
             font-family: var(--secondary-font);
+            animation: appear ease-in 2s;
         }
 
         h2 {
             font-size: 2rem;
             font-family: var(--secondary-font);
+            animation: show-up-left ease-in 1s;
         }
     }
 
@@ -30,6 +32,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
+        animation: show-up-right .8s;
 
         div {
             position: relative;
@@ -45,7 +48,7 @@
 
             a {
                 position: absolute;
-                color: #EBEBED;
+                color: var(--text);
                 left: 0;
                 background: rgba(0, 0, 0, .7);
                 width: 100%;
@@ -66,7 +69,29 @@
     }
 }
 
-@keyframes slideDown {
+@keyframes show-up-left {
+    from {
+        opacity: 0;
+        transform: translate(-200px, 0);
+    }
+    to {
+        opacity: initial;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes show-up-right {
+    from {
+        opacity: 0;
+        transform: translate(90px, 0);
+    }
+    to {
+        opacity: initial;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes appear {
     from {
         opacity: 0;
     }
