@@ -1,8 +1,9 @@
 .mainContainer {
     height: 90vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
 
     .mainLeft {
         display: flex;
@@ -10,7 +11,6 @@
         justify-content: center;
         color: var(--text);
         height: 100%;
-        padding-left: 2rem;
 
         h1 {
             font-size: 3rem;
@@ -24,48 +24,6 @@
             font-family: var(--secondary-font);
             animation: show-up-left ease-in 1s;
         }
-    }
-
-    .mainRight {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        animation: show-up-right .8s;
-
-        div {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            img {
-                cursor: pointer;
-                border-radius: 1rem;
-                transition: .3s;
-            }
-
-            a {
-                position: absolute;
-                color: var(--text);
-                left: 0;
-                background: rgba(0, 0, 0, .7);
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                padding: 10rem;
-                font-size: 1.5rem;
-                font-family: var(--primary-font);
-                border-radius: 1rem;
-                opacity: 0;
-                transition: opacity .3s;
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
-        }        
     }
 }
 

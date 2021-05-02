@@ -1,0 +1,42 @@
+.slider {        
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+    .slide {
+        position: relative;
+        opacity: 0;
+        transition-duration: 1s ease;
+    
+        .btnNext, .btnPrev {
+            position: absolute;
+            top: 50%;
+            border-radius: 50%;
+            padding: .5rem;
+            border: none;            
+            cursor: pointer;
+        }
+    
+        .btnNext {
+            right: 2rem;
+        }
+    
+        .btnPrev {
+            left: 2rem;
+        }
+    
+        &.active {
+            opacity: 1;
+            transition-duration: 1s;
+            transform: scale(1.08);
+        }
+    
+        .image {
+            width: 600px;
+            height: 350px;
+            border-radius: .5rem;
+        }
+    }     
+}
+
