@@ -28,20 +28,19 @@ const index = () => {
 
                 <p>Atualmente curso Engenharia de Software na Unicesumar e venho fazendo projetos pessoais para aplicar meus conhecimentos, assim como evoluir na arte de codar.</p>
                 <div className={styles.btnAbout}>
-                    <Link href="/techs">
-                        <Tooltip text="Tecnologias que uso">
-                            <Image width={50} height={50} src="/skills.svg" alt="tecnologias" objectFit='cover' />
-                        </Tooltip>
-                    </Link>
-
-                    <Link href="https://drive.google.com/file/d/1g9-HX8VxfmqIVgprbZn9hfUyqqpTUBVU/view?usp=sharing">
-                        <Tooltip text="Meu Currículo">
-                            <Image width={50} height={50} src="/cv.svg" alt="Currículo" objectFit='cover' />
-                        </Tooltip>
-                    </Link>
                     
-                </div>
+                <Tooltip text="Tecnologias que uso">
+                    <Link href="/techs">
+                    <Image width={50} height={50} src="/skills.svg" alt="tecnologias" objectFit='cover' />
+                    </Link>
+                </Tooltip>
 
+                <Tooltip text="Meu Currículo">
+                    <Link href="https://drive.google.com/file/d/1g9-HX8VxfmqIVgprbZn9hfUyqqpTUBVU/view?usp=sharing">
+                        <Image width={50} height={50} src="/cv.svg" alt="Currículo" objectFit='cover' />
+                    </Link>
+                </Tooltip>                   
+                </div>
             </div>
         </section>
     )
