@@ -12,7 +12,9 @@ export default function Home() {
         <h2>Olá, me chamo Bryan e sou</h2>
         <h1>Desenvolvedor Front End</h1>
         <Link href="https://github.com/bryanbruzinga">
-          <a target="__blank"><Image height={35} width={35} src='/github.svg' alt='Github' objectFit='cover' /></a>
+          <a target="__blank">
+            <Image height={35} width={35} src='/github.svg' alt='Github' objectFit='cover' />
+          </a>
         </Link>
       </section>
       <Slide />

@@ -1,8 +1,6 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-
-    main {
-        background: var(--background);
-    }
+    background: url('/bg2.jpg')no-repeat center center;
+    background-size: cover;
 }

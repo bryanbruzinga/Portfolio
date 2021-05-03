@@ -2,7 +2,8 @@
     height: 50vh;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    animation: show-up-right .6s ease;
     
     .slide {
         position: relative;
@@ -14,8 +15,9 @@
             top: 50%;
             border-radius: 50%;
             padding: .5rem;
-            border: none;            
+            border: none;          
             cursor: pointer;
+            font-size: 1rem;
         }
     
         .btnNext {
@@ -38,5 +40,16 @@
             border-radius: .5rem;
         }
     }     
+}
+
+@keyframes show-up-right {
+    from {
+        opacity: 0;
+        transform: translate(180px, 0);        
+    }
+    to {
+        opacity: initial;
+        transform: translate(0, 0);
+    }
 }
 

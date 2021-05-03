@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Slide.module.scss';
+import {AiOutlineArrowRight, AiOutlineArrowLeft} from 'react-icons/ai';
 
 export default function Slide() {
 
@@ -30,8 +31,12 @@ export default function Slide() {
         {images.map((slide, index) => {
           return (
             <div key={index} className={index === currentValue ? `${styles.slide} ${styles.active}` : `${styles.slide}`}>
-              <button onClick={nextSlide} className={styles.btnNext}>Próx</button>
-              <button onClick={prevSlide} className={styles.btnPrev}>Volt</button>
+              <button onClick={nextSlide} className={styles.btnNext}>
+                <AiOutlineArrowRight />
+              </button>
+              <button onClick={prevSlide} className={styles.btnPrev}>
+                <AiOutlineArrowLeft />
+              </button>
               {index === currentValue && (
                 <img src={slide.image} alt="Projetos" className={styles.image} />
               )}              

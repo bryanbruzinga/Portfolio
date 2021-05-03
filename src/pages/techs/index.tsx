@@ -35,6 +35,10 @@ const index = () => {
         {
             'nome': 'Sass',
             'img': 'https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg'
+        },
+        {
+            'nome': 'Git',
+            'img': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg'
         }
     ]
 
