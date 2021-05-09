@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './home.module.scss';
 import Image from 'next/image';
 import {Slide} from '../components/Slide';
+import TypeWritter from '../components/Typewritter';
 import {motion} from 'framer-motion'
 
 export default function Home() {
@@ -11,8 +12,7 @@ export default function Home() {
     <main className={styles.mainContainer}>
       
         <section className={styles.mainLeft}>
-          <h2>Olá, me chamo Bryan e sou</h2>
-          <h1>Desenvolvedor Front End</h1>
+          <TypeWritter />
           <Link href="https://github.com/bryanbruzinga">
             <a target="__blank">
               <Image height={35} width={35} src='/github.svg' alt='Github' objectFit='cover' />

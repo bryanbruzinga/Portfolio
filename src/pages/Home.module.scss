@@ -5,6 +5,7 @@
     justify-content: center;
     gap: 4rem;
     overflow: hidden;
+    padding: 0 2rem;
 
     .mainLeft {
         display: flex;
@@ -16,12 +17,7 @@
         h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            font-family: var(--secondary-font);
-        }
-
-        h2 {
-            font-size: 2rem;
-            font-family: var(--secondary-font);
+            font-family: var(--type-font);
         }
     }
 }
