@@ -17,44 +17,11 @@
             font-size: 3rem;
             margin-bottom: 1rem;
             font-family: var(--secondary-font);
-            animation: appear ease-in 2s;
         }
 
         h2 {
             font-size: 2rem;
             font-family: var(--secondary-font);
-            animation: show-up-left ease-in 1s;
         }
-    }
-}
-
-@keyframes show-up-left {
-    from {
-        opacity: 0;
-        transform: translate(-200px, 0);
-    }
-    to {
-        opacity: initial;
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes show-up-right {
-    from {
-        opacity: 0;
-        transform: translate(90px, 0);
-    }
-    to {
-        opacity: initial;
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: initial;
     }
 }
