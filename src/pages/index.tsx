@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import styles from './home.module.scss';
 import Image from 'next/image';
-import Slide from '../components/Slide';
+import {Slide} from '../components/Slide';
 import {motion} from 'framer-motion'
 
 export default function Home() {

@@ -1,55 +1,41 @@
-.slider {        
-    height: 50vh;
+.exampleContainer {
+    width: 47vw;
+    height: 100vh;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: show-up-right .6s ease;
-    
-    .slide {
-        position: relative;
-        opacity: 0;
-        transition-duration: 1s ease;
-    
-        .btnNext, .btnPrev {
-            position: absolute;
-            top: 50%;
-            border-radius: 50%;
-            padding: .5rem;
-            border: none;          
-            cursor: pointer;
-            font-size: 1rem;
-        }
-    
-        .btnNext {
-            right: 2rem;
-        }
-    
-        .btnPrev {
-            left: 2rem;
-        }
-    
-        &.active {
-            opacity: 1;
-            transition-duration: 1s;
-            transform: scale(1.08);
-        }
-    
-        .image {
-            width: 600px;
-            height: 350px;
-            border-radius: .5rem;
-        }
-    }     
-}
 
-@keyframes show-up-right {
-    from {
-        opacity: 0;
-        transform: translate(180px, 0);        
+    .next,
+    .prev {
+      top: calc(50% - 20px);
+      position: absolute;
+      background: white;
+      border-radius: 30px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+      z-index: 2;
     }
-    to {
-        opacity: initial;
-        transform: translate(0, 0);
+    
+    .next {
+      right: 10px;
     }
-}
-
+    
+    .prev {
+      left: 10px;
+      transform: scale(-1);
+    }
+    
+    img {
+      position: absolute;
+      max-width: 50vw;
+    }
+  }  
+ 

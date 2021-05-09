@@ -3,13 +3,14 @@ import Link from 'next/link';
 import React from 'react'
 import Tooltip from '../../components/Tooltip';
 import styles from './styles.module.scss';
+import {motion} from 'framer-motion'
 
 const index = () => {
     return (
         <section className={styles.sectionAbout}>
             <div className={styles.sectionAboutLeft}>
                 <h1>Um pouco sobre mim</h1>
-
+                
                 <Image width={100} height={100} src="https://github.com/bryanbruzinga.png" alt="Bryan" objectFit='cover' className={styles.imgPhoto} />
 
                 <h2>Veja meu perfil</h2>
