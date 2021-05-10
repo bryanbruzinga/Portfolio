@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 import styles from './home.module.scss';
-import Image from 'next/image';
 import {Slide} from '../components/Slide';
 import TypeWritter from '../components/Typewritter';
 import {motion} from 'framer-motion'
+import {AiFillGithub} from 'react-icons/ai'
 
 export default function Home() {
 
@@ -15,7 +15,7 @@ export default function Home() {
           <TypeWritter />
           <Link href="https://github.com/bryanbruzinga">
             <a target="__blank">
-              <Image height={35} width={35} src='/github.svg' alt='Github' objectFit='cover' />
+              <AiFillGithub />
             </a>
           </Link>
         </section>

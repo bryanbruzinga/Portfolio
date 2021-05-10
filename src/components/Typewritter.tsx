@@ -42,7 +42,7 @@ export default function TypeWriter() {
   return (
     <>
       <h1>
-        Olá, me chamo Bryan e sou {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
+        Olá, me chamo Bryan e sou um {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
       </h1>
     </>
   );

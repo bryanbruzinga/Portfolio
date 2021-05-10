@@ -39,13 +39,14 @@ export const Slide = () => {
   };
 
   return (
-    <div className={styles.exampleContainer}>
+    <div className={styles.slideContainer}>
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={page}
           src={images[imageIndex]}
           custom={direction}
           variants={variants}
+          className={styles.slideImg}
           initial="enter"
           animate="center"
           exit="exit"
