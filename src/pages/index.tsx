@@ -4,6 +4,7 @@ import styles from './home.module.scss';
 import {Slide} from '../components/Slide';
 import TypeWritter from '../components/Typewritter';
 import {motion} from 'framer-motion'
+import {GoLogoGithub} from 'react-icons/go'
 import {AiFillGithub} from 'react-icons/ai'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
           <Link href="https://github.com/bryanbruzinga">
             <a target="__blank">
               <AiFillGithub />
+              <GoLogoGithub />
             </a>
           </Link>
         </section>
