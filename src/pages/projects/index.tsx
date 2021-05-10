@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './styles.module.scss'
 import axios from 'axios'
 import Link from 'next/link'
+import { AiFillGithub } from 'react-icons/ai'
+import { MdVisibility } from 'react-icons/md'
 
 const index = () => {
     const [dados, setDados] = React.useState(null)
@@ -11,9 +13,6 @@ const index = () => {
     }, [])
 
     async function puxarDados() {
-        // fetch('./projetos.json')
-        // .then(r => r.json())
-        // .then(json => console.log(json))
         const info = await axios.get('http://localhost:3333/projetos')
         setDados(info.data)
     }
@@ -29,8 +28,12 @@ const index = () => {
                         <p>{item.description}</p>
                         <p>{item.techs}</p>
                         <div className={styles.projectLinks}>
-                            <Link href={item.site}>Visitar</Link>
-                            <Link href={item.github}>Github</Link>
+                            <Link href={item.site}>
+                               <a target="__blank"><MdVisibility /></a>
+                            </Link>
+                            <Link href={item.github}>
+                                <a target="__blank"><AiFillGithub /></a>
+                            </Link>
                         </div>
                     </div>)
                 })}

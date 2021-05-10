@@ -10,7 +10,7 @@
         },
         {
             "id": "Template Personal Trainer",
-            "img": "",
+            "img": "personal.png",
             "description": "Primeiro site construído sem framework, utilizando apenas da base, com animações simples baseado num template de Wordpress que vi na web.",
             "github": "https://github.com/bryanbruzinga/Site-Personal-Trainer",
             "site": "https://projeto-site-personal.vercel.app/",
@@ -18,7 +18,7 @@
         },
         {
             "id": "Pokemon",
-            "img": "",
+            "img": "pokemon.png",
             "description": "App que lista todos os pokémons disponíveis, faz o consumo da Api do Pokemon, cada Pokémon possui suas próprias informações.",
             "github": "https://github.com/bryanbruzinga/Pokemon",
             "site": "https://pokemon-sable.vercel.app/",
@@ -42,7 +42,7 @@
         },
         {
             "id": "ArcH",
-            "img": "",
+            "img": "arch.png",
             "description": "Protótipo de Dashboard sem funcionalidade para a ArchOffice.",
             "github": "https://github.com/bryanbruzinga/ArcH",
             "site": "https://arch.vercel.app/",
@@ -50,7 +50,7 @@
         },
         {
             "id": "Site Bootstrap",
-            "img": "",
+            "img": "bootstrap.png",
             "description": "Um site criado para estudar sobre o Bootstrap 5",
             "github": "https://github.com/bryanbruzinga/Site-Bootstrap-5",
             "site": "https://bryanbruzinga.github.io/Site-Bootstrap-5/",

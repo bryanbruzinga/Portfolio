@@ -8,11 +8,6 @@
 
     .slideImg {
       border-radius: 1rem;
-      transition: filter .3s ease-in;
-
-      &:hover {
-        filter: brightness(.3);
-      }
     }
 
     .next,
