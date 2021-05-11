@@ -41,14 +41,17 @@ const index = () => {
     return (
         <section className={styles.sectionContact}>
             <h1>Fale comigo</h1>
-            <div className={styles.containerContact}>
-                {formasContato.map(dados => {
-                    return (
-                    <a href={dados.link} target="__blank" key={dados.id}>
-                        <Image width={50} height={50} src={dados.src} alt={dados.id} objectFit='cover' />
-                        {dados.description}
-                    </a>
-                )})}
+            <div className={styles.contact}>
+                <Image width={400} height={400} src="/conbg.png" alt="contato" objectFit='cover' />
+                <div className={styles.containerContact}>
+                    {formasContato.map(dados => {
+                        return (
+                        <a href={dados.link} target="__blank" key={dados.id}>
+                            <Image width={50} height={50} src={dados.src} alt={dados.id} objectFit='cover' />
+                            {dados.description}
+                        </a>
+                    )})}
+                </div>
             </div>
         </section>
     )

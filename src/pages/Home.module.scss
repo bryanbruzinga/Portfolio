@@ -7,6 +7,12 @@
     overflow: hidden;
     padding: 0 2rem;
 
+    @media (max-width: 862px) {
+        height: 100%;
+        flex-direction: column;
+        gap: 0;
+    }
+
     .mainLeft {
         display: flex;
         flex-direction: column;
@@ -19,6 +25,12 @@
             font-size: 3rem;
             margin-bottom: 1rem;
             font-family: var(--type-font);
+
+            @media (max-width: 862px) {
+                font-size: 2rem;
+                text-align: center;
+                margin-top: 2rem;
+            }
         }
 
         a {

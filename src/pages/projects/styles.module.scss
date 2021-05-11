@@ -18,6 +18,17 @@
         justify-content: center;
         gap: 2rem;
 
+        @media (max-width: 1000px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 695px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }       
+
         .projectCard {
             width: 300px;
             text-align: center;
