@@ -5,13 +5,13 @@ import TypeWritter from '../components/Typewritter';
 import {motion} from 'framer-motion'
 import {GoLogoGithub} from 'react-icons/go'
 import {AiFillGithub} from 'react-icons/ai'
+import {FaHandSpock} from 'react-icons/fa'
 import Image from 'next/image';
 
 export default function Home() {
 
   return (
-    <main className={styles.mainContainer}>
-      
+    <main className={styles.mainContainer}>      
         <section className={styles.mainLeft}>
           <TypeWritter />
           <div className={styles.mainLinks}>
@@ -23,7 +23,7 @@ export default function Home() {
             </Link>
             <Link href="/projects">
               <a>
-                Veja meus Projetos
+               <FaHandSpock />Meus projetos
               </a>
             </Link>
           </div>

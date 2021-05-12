@@ -1,6 +1,5 @@
 .headerContainer {
     height: 10vh;
-    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,18 +8,94 @@
         width: 70rem;
         display: flex;
         justify-content: flex-end;
+        position: relative;
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 1rem;
+            align-items: center;
+            color: #fff;
+            font-size: 0;
+            margin: 10px;
+            position: relative;
+            z-index: 300;
+
+            &::before {
+                margin-right: 4px;
+                content: '';
+                display: inline-block;
+                height: 2px;
+                width: 12px;
+                background: #fff;
+                box-shadow: 0 4px #fff, 0 -4px #fff;
+                transition: transform .3s;
+            }
+
+            &.active {
+                color: #38b143;
+
+                &::before {
+                    transform: rotate(90deg);
+                }
+            }
+
+            @media (min-width: 750px) {
+                display: none;
+            }
+        }
+
+        .menuMobile {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            left: 0;
+            top: -10px;
+            background: rgba(0, 0, 0, .9);
+            width: 100%;
+            height: 50vh;
+            z-index: 3;
+
+            li {
+                margin: .5rem;
+            }
+        }
 
         ul {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
+            animation: show-up .2s ease-in;
+            
+            @media (max-width: 750px) {
+                display: none;
+            }
 
             a {
                 padding: .5rem 1rem;
                 font-size: 1.125rem;
                 color: #EBEBED;
                 font-family: var(--primary-font);
+                transition: color .2s ease-in;
+
+                &:hover {
+                    color: var(--button);
+                }
             }
         }
     }
+}
+
+@keyframes show-up {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+      } to {
+        opacity: 1;
+        transform: translateX(initial);
+      }
 }

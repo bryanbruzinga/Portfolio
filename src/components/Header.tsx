@@ -1,11 +1,19 @@
+import React from 'react';
 import Link from "next/link";
 import styles from "./Header.module.scss";
 
 const Header = () => {
+  const [menuMobile, setMenuMobile] = React.useState<boolean>(false)
+  
+  function toggleMenu() {
+    setMenuMobile(!menuMobile)
+  }
+
   return (
     <header className={styles.headerContainer}>
       <nav>
-        <ul>
+        <button onClick={toggleMenu} className={menuMobile && styles.active}></button>
+        <ul className={menuMobile && `${styles.menuMobile}`}>
           <li>
             <Link href="/">Home</Link>
           </li>
