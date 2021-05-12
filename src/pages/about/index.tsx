@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react'
 import Tooltip from '../../components/Tooltip';
 import styles from './styles.module.scss';
-import {motion} from 'framer-motion'
+import {GrLinkedin} from 'react-icons/gr'
 
 const index = () => {
     return (
@@ -17,7 +17,7 @@ const index = () => {
 
                 <Link href="https://www.linkedin.com/in/bryan-da-silva-bruzinga-b6830960/">
                     <a target="__blank">
-                        <Image width={50} height={50} src="/linkedin.svg" alt="Linkedin" objectFit='cover' />
+                        <GrLinkedin />
                     </a>
                 </Link>
             </div>

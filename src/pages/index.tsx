@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
 import styles from './home.module.scss';
-import {Slide} from '../components/Slide';
 import TypeWritter from '../components/Typewritter';
 import {motion} from 'framer-motion'
 import {GoLogoGithub} from 'react-icons/go'
 import {AiFillGithub} from 'react-icons/ai'
+import Image from 'next/image';
 
 export default function Home() {
 
@@ -14,12 +14,19 @@ export default function Home() {
       
         <section className={styles.mainLeft}>
           <TypeWritter />
-          <Link href="https://github.com/bryanbruzinga">
-            <a target="__blank">
-              <AiFillGithub />
-              <GoLogoGithub />
-            </a>
-          </Link>
+          <div className={styles.mainLinks}>
+            <Link href="https://github.com/bryanbruzinga">
+              <a target="__blank">
+                <AiFillGithub />
+                <GoLogoGithub />
+              </a>
+            </Link>
+            <Link href="/projects">
+              <a>
+                Veja meus Projetos
+              </a>
+            </Link>
+          </div>
         </section>
       
       <motion.div initial="hidden" animate="visible" variants={{
@@ -35,7 +42,7 @@ export default function Home() {
           }
         }
       }}>
-        <Slide />
+        <Image height={400} width={400} src="/giphy.gif" alt="Developer" objectFit='cover' />
       </motion.div>
     </main>
   );

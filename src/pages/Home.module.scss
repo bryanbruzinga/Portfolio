@@ -20,33 +20,69 @@
         align-items: center;
         color: var(--text);
         height: 100%;
+        max-width: 550px;
 
         h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
             font-family: var(--type-font);
 
-            @media (max-width: 862px) {
+            @media (max-width: 960px) {
                 font-size: 2rem;
+            }
+
+            @media (max-width: 862px) {
                 text-align: center;
                 margin-top: 2rem;
             }
         }
 
-        a {
-            background: linear-gradient(125deg, rgba(255,255,255,1) 31%, rgba(204,204,204,1) 100%);
-            padding: .5rem 1.5rem;
-            border-radius: .5rem;
-            color: black;
-            font-size: 2.5rem;
-            transition: all .3s ease-in-out;
+        .mainLinks {
             display: flex;
             align-items: center;
+            justify-content: space-around;
+            width: 100%;
 
-            &:hover {
-                background: linear-gradient(125deg, rgba(85,40,111,1) 50%, rgba(33,11,44,1) 95%);
-                color: #ccc;
+            a {
+                background: linear-gradient(125deg, rgba(255,255,255,1) 31%, rgba(204,204,204,1) 100%);
+                border-radius: .5rem;
+                color: black;
+                transition: all .3s ease-in-out;
+                display: flex;
+                align-items: center;
+
+                &:first-child {
+                    padding: .5rem 3rem;
+                    font-size: 2.5rem;
+
+                    @media (max-width: 862px) {
+                        font-size: 2rem;
+                    }
+                }
+
+                &:last-child {
+                    font-size: 1.5rem;
+                    padding: .9rem 1.5rem;
+
+                    @media (max-width: 862px) {
+                        font-size: 1rem;
+                    }
+                }
+
+                @media (max-width: 862px) {
+                    font-size: 1rem;
+                }
+    
+                &:hover {
+                    background: linear-gradient(125deg, rgba(85,40,111,1) 50%, rgba(33,11,44,1) 95%);
+                    color: #ccc;
+                }
             }
-        }
+        }        
+    }
+
+    img {
+        border-radius: 50%;
+        
     }
 }
