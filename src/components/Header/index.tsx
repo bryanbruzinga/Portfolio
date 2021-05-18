@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from "next/link";
-import styles from "./Header.module.scss";
+import styles from "./styles.module.scss";
 
 const Header = () => {
   const [menuMobile, setMenuMobile] = React.useState<boolean>(false)
@@ -13,7 +13,7 @@ const Header = () => {
     <header className={styles.headerContainer}>
       <nav>
         <button onClick={toggleMenu} className={menuMobile && styles.active}></button>
-        <ul className={menuMobile && `${styles.menuMobile}`}>
+        <ul className={menuMobile ? `${styles.menuMobile}` : ''}>
           <li>
             <Link href="/">Home</Link>
           </li>
