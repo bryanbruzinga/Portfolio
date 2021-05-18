@@ -5,25 +5,28 @@ import Link from 'next/link'
 import { AiFillGithub } from 'react-icons/ai'
 import { MdVisibility } from 'react-icons/md'
 import Tooltip from '../../components/Tooltip'
-import {GrReactjs} from 'react-icons/gr'
+import {GetStaticProps} from 'next'
 
-const index = () => {
-    const [dados, setDados] = React.useState(null)
+interface Projects {
+    id: string,
+    img: string,
+    description: string,
+    github: string,
+    site: string,
+    techs: string
+}
 
-    React.useEffect(() => {
-        puxarDados()
-    }, [])
+interface ProjectProps {
+    projects: Projects[]
+}
 
-    async function puxarDados() {
-        const info = await axios.get('http://localhost:3333/projetos')
-        setDados(info.data)
-    }
+export default function index ({projects} : ProjectProps) {
 
     return (
         <div className={styles.projectContainer}>
             <h1>Projetos executados</h1>
             <div className={styles.projectCardContainer}>
-                {dados && dados.map(item => {
+                {projects && projects.map(item => {
                     return (<div key={item.id} className={styles.projectCard}>
                         <img src={item.img} alt={item.id} />
                         <h3>{item.id}</h3>
@@ -48,4 +51,13 @@ const index = () => {
     )
 }
 
-export default index
+export const getStaticProps : GetStaticProps<ProjectProps> = async () => {
+    const response = await axios.get('http://localhost:3333/projetos')
+    const projects = await response.data
+
+    return {
+        props: {
+            projects
+        }
+    }
+}
