@@ -7,6 +7,7 @@
     @media (max-width: 750px) {
         height: 100%;
         flex-direction: column;
+        justify-content: center;
     }
 
     .contact {
@@ -25,10 +26,6 @@
             @media (max-width: 862px) {
                 margin: 1rem;
             }
-        }
-
-        img {
-            animation: appear .3s ease-in-out;
         }
 
         .containerContact {
@@ -58,12 +55,4 @@
             }
         }
     }       
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
 }
