@@ -7,6 +7,7 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { FiGithub } from "react-icons/fi";
 import { ImWhatsapp } from "react-icons/im";
 import { SiGmail } from "react-icons/si";
+import Form from "../../components/Form/Index";
 
 type dados = {
   id: string;
@@ -27,8 +28,9 @@ const index = () => {
 
   return (
     <section className={styles.sectionContact}>
-      <h1>Fale comigo</h1>
+      <Form />      
       <div className={styles.contact}>
+        <h1>Fale comigo</h1>
         <Lottie options={defaultOptions} height={400} width={400} />
         <div className={styles.containerContact}>
           <Link href="https://www.linkedin.com/in/bryan-da-silva-bruzinga-b6830960/">

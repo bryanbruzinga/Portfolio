@@ -1,26 +1,30 @@
 .sectionContact {
     height: 90vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;  
+    justify-content: space-evenly; 
     
     @media (max-width: 850px) {
         height: 100%;
     }
 
-    h1 {
-        color: white;
-        font-family: var(--secondary-font);
-        font-size: 2rem;
-        margin-bottom: 2rem;
-
-        @media (max-width: 862px) {
-            margin: 1rem;
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        h1 {
+            color: var(--title);
+            font-family: var(--secondary-font);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+    
+            @media (max-width: 862px) {
+                margin: 1rem;
+            }
         }
-    }
-
-    .contact {        
 
         img {
             animation: appear .3s ease-in-out;

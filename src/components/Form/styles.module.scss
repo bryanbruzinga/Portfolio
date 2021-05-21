@@ -1,0 +1,58 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+
+    label {
+        color: var(--text);
+        font-family: var(--primary-font);
+    }
+
+    input, textarea {
+        width: 100%;
+        margin: .5rem 0;
+        border: none;
+        border-bottom: 1px solid var(--button);
+        padding: .5rem 0;
+        margin-bottom: 1rem;
+        background: none;
+        color: var(--text);
+        transition: all .2s ease-in;
+
+        &:focus, &:hover {
+            outline: 1px solid var(--buttonHover);
+        }
+    }
+
+    input:focus {
+        padding: 1rem;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button {
+        border: none;
+        cursor: pointer;
+        padding: .5rem 2rem;
+        background: var(--button);
+        color: var(--background);
+        font-size: 1rem;
+        align-self: center;
+        font-family: var(--primary-font);
+        border-radius: .5rem;
+        transition: background .2s ease-in;
+
+        &:hover {
+            background: var(--buttonHover);
+            color: var(--text);
+        }
+
+        &:disabled {
+            opacity: .5;
+            cursor: not-allowed;
+        }
+    }
+
+}
