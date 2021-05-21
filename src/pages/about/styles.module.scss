@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 2rem;
     
-    @media (max-width: 850px) {
+    @media (max-width: 870px) {
         flex-direction: column;
         overflow: auto;
         height: 100%;
@@ -19,7 +19,11 @@
             font-family: var(--secondary-font);
             text-align: center;
             font-size: 2.5rem;
-        }        
+
+            @media (max-width: 515px) {
+                font-size: 1.5rem;
+            }
+        }
     }  
 
     .sectionAboutRight {
@@ -32,14 +36,17 @@
             line-height: 1.5;
             text-align: center;
             margin-bottom: 1rem;
-            animation: show-up .3s ease-in-out;
+
+            @media (max-width: 1000px) {
+                font-size: 1rem;
+                padding-right: 1rem;   
+            }
         }
 
         .btnAbout {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-            animation: move-up .3s ease-in;
 
             @media (max-width: 850px) {
                 margin-bottom: 2rem;
@@ -51,22 +58,4 @@
         }
 
     }    
-}
-
-@keyframes show-up {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes move-up {
-    from {
-        transform: translate3d(0, 180px, 0);
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-    }
 }

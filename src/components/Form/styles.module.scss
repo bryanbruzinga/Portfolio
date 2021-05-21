@@ -3,6 +3,10 @@
     flex-direction: column;
     width: 30vw;
 
+    @media (max-width: 750px) {
+       width: 90vw;             
+    }
+
     label {
         color: var(--text);
         font-family: var(--primary-font);

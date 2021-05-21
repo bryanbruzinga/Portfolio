@@ -7,6 +7,7 @@ import {AiFillGithub} from 'react-icons/ai'
 import {FaHandSpock} from 'react-icons/fa'
 import Lottie from 'react-lottie'
 import animationData from '../lotties/person.json'
+import {Fade} from 'react-reveal'
 
 export default function Home() {
 
@@ -22,27 +23,32 @@ export default function Home() {
   return (
     <main className={styles.mainContainer}>      
         <section className={styles.mainLeft}>
-          <div>
-            <span>&lt;h1&gt;</span>
-            <TypeWritter />
-            <span>&lt;/h1&gt;</span>
-          </div>
-          <div className={styles.mainLinks}>
-            <Link href="https://github.com/bryanbruzinga">
-              <a target="__blank">
-                <AiFillGithub />
-                <GoLogoGithub />
-              </a>
-            </Link>
-            <Link href="/projects">
-              <a>
-               <span><FaHandSpock /></span>Meus projetos
-              </a>
-            </Link>
-          </div>
+          <Fade>
+            <div>
+              <span>&lt;h1&gt;</span>
+              <TypeWritter />
+              <span>&lt;/h1&gt;</span>
+            </div>
+          </Fade>
+          <Fade bottom>
+            <div className={styles.mainLinks}>
+              <Link href="https://github.com/bryanbruzinga">
+                <a target="__blank">
+                  <AiFillGithub />
+                  <GoLogoGithub />
+                </a>
+              </Link>
+              <Link href="/projects">
+                <a>
+                <span><FaHandSpock /></span>Meus projetos
+                </a>
+              </Link>
+            </div>
+          </Fade>
         </section>
-
-      <Lottie options={defaultOptions} height={600} width={400} />
+      <Fade right>
+        <Lottie options={defaultOptions} height={600} width={400} />
+      </Fade>
     </main>
   );
 }

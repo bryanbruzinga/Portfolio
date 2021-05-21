@@ -5,6 +5,7 @@ import Tooltip from '../../components/Tooltip';
 import styles from './styles.module.scss';
 import Lottie from 'react-lottie'
 import animationData from '../../lotties/coronavirus.json'
+import {Bounce, Fade} from 'react-reveal'
 
 const index = () => {
     const defaultOptions = {
@@ -19,16 +20,22 @@ const index = () => {
     return (
         <section className={styles.sectionAbout}>
             <div className={styles.sectionAboutLeft}>
-                <h1>Um pouco sobre mim</h1>
-                <Lottie options={defaultOptions} height={500} width={500} />                
+                <Fade top>
+                    <h1>Um pouco sobre mim</h1>
+                </Fade>
+                <Bounce left>
+                    <Lottie options={defaultOptions} height={500} width={500} />
+                </Bounce>            
             </div>
 
             <div className={styles.sectionAboutRight}>
-                <p>Estou mudando de carreira, atuei no ramo industrial durante anos e estou em busca da minha primeira oportunidade.</p>
+                <Fade bottom>
+                    <p>Estou mudando de carreira, atuei no ramo industrial durante anos e estou em busca da minha primeira oportunidade.</p>
 
-                <p>No momento só trabalho com Front-End, mas nada me impede de aprender e me especializar em outras áreas, como Back-End.</p>
+                    <p>No momento só trabalho com Front-End, mas nada me impede de aprender e me especializar em outras áreas, como Back-End.</p>
 
-                <p>Estou cursando Engenharia de Software na Unicesumar e venho fazendo projetos pessoais para aplicar e ampliar meus conhecimentos, bora ser meu chefe? rsrs</p>
+                    <p>Estou cursando Engenharia de Software na Unicesumar e venho fazendo projetos pessoais para aplicar e ampliar meus conhecimentos, bora ser meu chefe? rsrs</p>
+                </Fade>
                 <div className={styles.btnAbout}>
                     
                 <Tooltip text="Tecnologias que uso">
