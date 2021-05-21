@@ -1,6 +1,14 @@
 {
     "projetos": [
         {
+            "id": "Helthy Food",
+            "img": "healthyFood.png",
+            "description": "Site simples com página de cadastro que possui uma integração com Api viaCep para completar os campos de endereço, também possui um simples sistema de validação.",
+            "github": "https://github.com/bryanbruzinga/Healthy-Food",
+            "site": "https://healthyfood-bryanbruzinga.vercel.app/",
+            "techs": "NextJs, Css, Formik, Yup"
+        },
+        {
             "id": "E-commerce de Games",
             "img": "eCommerce.png",
             "description": "Aplicativo simples de E-commerce com operações de adicionar e remover ítens do carrinho e organizar a lista de produtos.",

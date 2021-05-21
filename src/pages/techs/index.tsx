@@ -39,6 +39,10 @@ const index = () => {
         {
             'nome': 'Git',
             'img': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg'
+        },
+        {
+            'nome': 'Bootstrap',
+            'img': 'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg'
         }
     ]
 

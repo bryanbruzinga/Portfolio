@@ -5,7 +5,7 @@
     justify-content: center;
     gap: 4rem;
     overflow: hidden;
-    padding: 0 2rem;
+    padding: 0 5rem;
 
     @media (max-width: 862px) {
         height: 100vh;
@@ -20,22 +20,42 @@
         align-items: center;
         color: var(--text);
         height: 100%;
-        max-width: 550px;
+        max-width: 45vw;
 
-        h1 {
-            font-size: 3rem;
+        div:first-child {
+            display: flex;
+            flex-direction: column;
             margin-bottom: 1rem;
-            font-family: var(--type-font);
 
-            @media (max-width: 960px) {
-                font-size: 2rem;
+            span {
+                color: var(--button);
+                font-size: 2.5rem;
+                font-family: var(--primary-font);
+                font-weight: bold;
+                opacity: .7;
+
+                &:last-child {
+                    align-self: flex-end;
+                }
             }
 
-            @media (max-width: 862px) {
-                text-align: center;
-                margin-top: 2rem;
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                font-family: var(--type-font);
+    
+                @media (max-width: 960px) {
+                    font-size: 2rem;
+                }
+    
+                @media (max-width: 862px) {
+                    text-align: center;
+                    margin-top: 2rem;
+                }
             }
         }
+
+        
 
         .mainLinks {
             display: flex;

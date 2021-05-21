@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from "next/link";
 import styles from "./styles.module.scss";
+import {GiHamburgerMenu} from 'react-icons/gi'
 
 const Header = () => {
   const [menuMobile, setMenuMobile] = React.useState<boolean>(false)
@@ -12,8 +13,10 @@ const Header = () => {
   return (
     <header className={styles.headerContainer}>
       <nav>
-        <button onClick={toggleMenu} className={menuMobile && styles.active}></button>
-        <ul className={menuMobile ? `${styles.menuMobile}` : ''}>
+        <button onClick={toggleMenu}>
+          <GiHamburgerMenu />
+        </button>
+        <ul className={menuMobile ? `${styles.active}` : ''}>
           <li>
             <Link href="/">Home</Link>
           </li>

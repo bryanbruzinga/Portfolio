@@ -6,6 +6,8 @@ import { AiFillGithub } from 'react-icons/ai'
 import { MdVisibility } from 'react-icons/md'
 import Tooltip from '../../components/Tooltip'
 import {GetStaticProps} from 'next'
+import Lottie from 'react-lottie'
+import animationData from '../../lotties/programming.json'
 
 interface Projects {
     id: string,
@@ -22,9 +24,21 @@ interface ProjectProps {
 
 export default function index ({projects} : ProjectProps) {
 
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: "xMidYMid slice"
+        }
+      };
+
     return (
         <div className={styles.projectContainer}>
-            <h1>Projetos executados</h1>
+            <div className={styles.projectTitle}>
+                <h1>Projetos Pessoais</h1>
+                <Lottie options={defaultOptions} height={400} width={400} />
+            </div>
             <div className={styles.projectCardContainer}>
                 {projects && projects.map(item => {
                     return (<div key={item.id} className={styles.projectCard}>
