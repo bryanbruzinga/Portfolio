@@ -3,31 +3,32 @@ import Link from 'next/link';
 import React from 'react'
 import Tooltip from '../../components/Tooltip';
 import styles from './styles.module.scss';
-import {GrLinkedin} from 'react-icons/gr'
+import Lottie from 'react-lottie'
+import animationData from '../../lotties/coronavirus.json'
 
 const index = () => {
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: "xMidYMid slice"
+        }
+      };
+
     return (
         <section className={styles.sectionAbout}>
             <div className={styles.sectionAboutLeft}>
                 <h1>Um pouco sobre mim</h1>
-                
-                <Image width={100} height={100} src="https://github.com/bryanbruzinga.png" alt="Bryan" objectFit='cover' className={styles.imgPhoto} />
-
-                <h2>Veja meu perfil</h2>
-
-                <Link href="https://www.linkedin.com/in/bryan-da-silva-bruzinga-b6830960/">
-                    <a target="__blank">
-                        <GrLinkedin />
-                    </a>
-                </Link>
+                <Lottie options={defaultOptions} height={500} width={500} />                
             </div>
 
             <div className={styles.sectionAboutRight}>
-                <p>Estou iniciando no ramo de desenvolvimento, em transição de carreira, atuei como eletricista industrial a maior parte do tempo e também atuei como Técnico de telecomunicações.</p>
+                <p>Estou mudando de carreira, atuei no ramo industrial durante anos e estou em busca da minha primeira oportunidade.</p>
 
-                <p>Hoje busco uma oportunidade para atuar na área, inicialmente como desenvolvedor Front End, porém quero me especializar mais ainda para me tornar Full Stack.</p>
+                <p>No momento só trabalho com Front-End, mas nada me impede de aprender e me especializar em outras áreas, como Back-End.</p>
 
-                <p>Atualmente curso Engenharia de Software na Unicesumar e venho fazendo projetos pessoais para aplicar meus conhecimentos, assim como evoluir na arte de codar.</p>
+                <p>Estou cursando Engenharia de Software na Unicesumar e venho fazendo projetos pessoais para aplicar e ampliar meus conhecimentos, bora ser meu chefe? rsrs</p>
                 <div className={styles.btnAbout}>
                     
                 <Tooltip text="Tecnologias que uso">

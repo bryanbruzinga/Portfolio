@@ -42,7 +42,7 @@
             h1 {
                 font-size: 3rem;
                 margin-bottom: 1rem;
-                font-family: var(--type-font);
+                font-family: var(--secondary-font);
     
                 @media (max-width: 960px) {
                     font-size: 2rem;
@@ -68,7 +68,7 @@
             }
 
             a {
-                background: linear-gradient(125deg, rgba(255,255,255,1) 31%, rgba(204,204,204,1) 100%);
+                background: var(--button);
                 border-radius: .5rem;
                 color: black;
                 transition: all .3s ease-in-out;
@@ -99,9 +99,13 @@
                 }
     
                 &:hover {
-                    background: linear-gradient(125deg, rgba(85,40,111,1) 50%, rgba(33,11,44,1) 95%);
-                    color: #ccc;
+                    background: var(--buttonHover);
+                    color: var(--text);
                 }
+            }
+
+            span {
+                margin-right: .5rem;
             }
         }        
     }

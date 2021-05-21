@@ -36,7 +36,7 @@ export default function Home() {
             </Link>
             <Link href="/projects">
               <a>
-               <FaHandSpock />Meus projetos
+               <span><FaHandSpock /></span>Meus projetos
               </a>
             </Link>
           </div>

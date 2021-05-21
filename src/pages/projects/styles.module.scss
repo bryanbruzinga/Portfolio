@@ -41,6 +41,7 @@
             text-align: center;
             background: rgba(0, 0, 0, .5);
             border-radius: .5rem;
+            overflow: hidden;
 
             &:nth-child(1) {
                 animation: show-up .3s ease-in;
@@ -76,10 +77,26 @@
     
             img {
                 width: 300px;
+                transition: filter .2s ease-in;
+                filter: brightness(.85);
+
+                &::after {
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background: rgba(0, 0, 0, .5);
+                    z-index: 5;
+                }
+
+                &:hover {
+                    filter: none;
+                }
             }
 
             h3 {
-                color: var(--text);
+                color: var(--title);
                 font-family: var(--secondary-font);
             }
 
@@ -96,8 +113,12 @@
                 padding-bottom: 1rem;
                 
                 a {
-                    color: var(--text);
+                    color: var(--button);
                     font-size: 1.5rem;
+
+                    &:hover {
+                        color: var(--buttonHover);
+                    }
                 }
             }
         }
