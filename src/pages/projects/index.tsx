@@ -8,6 +8,7 @@ import Tooltip from '../../components/Tooltip'
 import {GetStaticProps} from 'next'
 import Lottie from 'react-lottie'
 import animationData from '../../lotties/programming.json'
+import {projects}  from './projetos'
 
 interface Projects {
     id: string,
@@ -66,8 +67,8 @@ export default function index ({projects} : ProjectProps) {
 }
 
 export const getStaticProps : GetStaticProps<ProjectProps> = async () => {
-    const response = await axios.get('http://localhost:3333/projetos')
-    const projects = await response.data
+    // const response = await axios.get('http://localhost:3333/projetos')
+    // const projects = await response.data
 
     return {
         props: {
