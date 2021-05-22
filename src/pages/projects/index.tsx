@@ -30,7 +30,7 @@ export default function index ({projects} : ProjectProps) {
 
     React.useEffect(() => {
         setNewProjects(projects.slice(((currentPage - 1) * amountProjectsPerPage), (currentPage * amountProjectsPerPage)))     
-    }, [currentPage, amountProjectsPerPage])
+    }, [currentPage])
 
     const defaultOptions = {
         loop: true,

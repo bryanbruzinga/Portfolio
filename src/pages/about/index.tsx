@@ -24,7 +24,9 @@ const index = () => {
                     <h1>Um pouco sobre mim</h1>
                 </Fade>
                 <Bounce left>
-                    <Lottie options={defaultOptions} height={500} width={500} />
+                    <div className={styles.animation}>
+                        <Lottie options={defaultOptions} height={400} width={450} />
+                    </div>
                 </Bounce>            
             </div>
 

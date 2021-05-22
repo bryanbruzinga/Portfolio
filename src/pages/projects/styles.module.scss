@@ -1,13 +1,13 @@
 .projectContainer {
-    height: 100%;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    margin: 3rem 0;
 
     @media (max-width: 1130px) {
         flex-direction: column;
+        height: 100%;
     }
 
     .projectTitle {
@@ -33,6 +33,10 @@
     .projectCardContainer {
         display: flex;
         flex-direction: column;
+
+        @media (max-width: 1130px) {
+            margin-bottom: 2rem;
+        }
         
         .projectCardList {
             display: flex;
@@ -46,7 +50,8 @@
                 width: 300px;
                 text-align: center;
                 background: rgba(0, 0, 0, .5);
-                border-radius: .5rem;                
+                border-radius: .5rem;
+                animation: appearFromRight .3s ease-in;               
 
                 img {
                     width: 300px;
@@ -73,7 +78,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-evenly;
-                    padding-bottom: 1rem;
+                    padding-bottom: .5rem;
                     
                     a {
                         color: var(--button);
@@ -87,4 +92,14 @@
             }              
         }
     }    
+}
+
+@keyframes appearFromRight {
+    from {
+        transform: translate3d(90px, 0, 0);
+        opacity: 0;
+    } to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
