@@ -1,0 +1,29 @@
+.paginationContainer {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    button {
+        padding: .875rem;
+        border: none;
+        color: var(--background);
+        background-color: var(--button);
+        font-family: var(--primary-font);
+        font-size: 1rem;
+        border-radius: .5rem;
+        transition: filter .2s ease-in;
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(.65);
+            color: var(--text);
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: .2rem;
+    }
+}
