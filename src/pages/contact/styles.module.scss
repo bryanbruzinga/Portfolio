@@ -2,7 +2,8 @@
     height: 90vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
+    overflow: hidden;
     
     @media (max-width: 750px) {
         height: 100%;

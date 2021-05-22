@@ -29,21 +29,21 @@ const index = () => {
           <Lottie options={defaultOptions} height={400} width={400} />
           <div className={styles.containerContact}>
             <Link href="https://www.linkedin.com/in/bryan-da-silva-bruzinga-b6830960/">
-              <a>
+              <a target="__blank">
                 <GrLinkedinOption />
               </a>
             </Link>
             <Link href="https://github.com/bryanbruzinga">
-              <a>
+              <a target="__blank">
                 <FiGithub />
               </a>
             </Link>
-            <Link href="">
+            <Link href="https://api.whatsapp.com/send?phone=5543984057266&text=Ol%C3%A1%20Bryan%2C%20vi%20o%20seu%20port%C3%B3lio%20e">
               <a>
                 <ImWhatsapp />
               </a>
             </Link>
-            <Link href="">
+            <Link href="mailto:bryanbruzinga1990@gmail.com">
               <a>
                 <SiGmail />
               </a>

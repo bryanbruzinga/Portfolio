@@ -5,6 +5,7 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 
 const Header = () => {
   const [menuMobile, setMenuMobile] = React.useState<boolean>(false)
+  const ref = React.useRef()
   
   function toggleMenu() {
     setMenuMobile(!menuMobile)
@@ -16,20 +17,20 @@ const Header = () => {
         <button onClick={toggleMenu}>
           <GiHamburgerMenu />
         </button>
-        <ul className={menuMobile ? `${styles.active}` : ''}>
-          <li>
+        <ul ref={ref} className={menuMobile ? `${styles.active}` : ''}>
+          <li onClick={toggleMenu}>
             <Link href="/">Home</Link>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <Link href="/about">Sobre mim</Link>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <Link href="/projects">Projetos</Link>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <Link href="/techs">Tecnologias</Link>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <Link href="/contact">Entre em contato</Link>
           </li>
         </ul>

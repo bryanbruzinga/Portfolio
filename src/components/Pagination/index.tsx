@@ -29,7 +29,7 @@ export default function Pagination({amountProjectsPerPage, total, currentPage, s
             </button>
                 <ul>
                     {Array.from({ length: pages}).map((i, index) => index + first)
-                    .map(page => <li>
+                    .map((page, index) => <li key={index}>
                         <button onClick={() => setCurrentPage(page)}>
                         {page}
                         </button>
