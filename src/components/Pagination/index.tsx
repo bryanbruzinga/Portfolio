@@ -24,9 +24,15 @@ export default function Pagination({amountProjectsPerPage, total, currentPage, s
 
     return (
         <div className={styles.paginationContainer}>
-            <button onClick={previousPage}>
-                <GrFormPrevious />
-            </button>
+            {currentPage === 1 ? (
+                <button disabled>
+                     <GrFormPrevious />
+                </button>
+            ) : (
+                <button onClick={previousPage}>
+                     <GrFormPrevious />
+                </button>
+            )}            
                 <ul>
                     {Array.from({ length: pages}).map((i, index) => index + first)
                     .map((page, index) => <li key={index}>
@@ -36,9 +42,15 @@ export default function Pagination({amountProjectsPerPage, total, currentPage, s
                     </li>)
                     }                    
                 </ul>
-            <button onClick={nextPage}>
-                <GrNext />
-            </button>
+                {currentPage >= pages ? (
+                    <button disabled>
+                    <GrNext />
+                </button>
+                ) : (
+                    <button onClick={nextPage}>
+                    <GrNext />
+                </button> 
+                )}
         </div>
     )
 }

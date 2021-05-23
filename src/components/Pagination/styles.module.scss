@@ -20,6 +20,11 @@
             filter: brightness(.65);
             color: var(--text);
         }
+
+        &:disabled {
+            opacity: .3;
+            cursor: default;
+        }
     }
 
     ul {
