@@ -24,6 +24,14 @@ export const projects = [
             "techs": "Html, Css, Javascript"
         },
         {
+            "id": "Formulário multietapa de Registro",
+            "img": "tecnovue.png",
+            "description": "Página de formulário de cadastro, possui 5 etapas em que cada etapa possui validação, aplicação responsiva.",
+            "github": "https://github.com/bryanbruzinga/Tecnospeed-Formulario",
+            "site": "https://tecnovue.vercel.app/#/",
+            "techs": "Vuejs, Css, Vuelidator, Vue Form Wizard, Vue Formulator"
+        },
+        {
             "id": "Pokemon",
             "img": "pokemon.png",
             "description": "App que lista todos os pokémons disponíveis, faz o consumo da Api do Pokemon, cada Pokémon possui suas próprias informações.",
