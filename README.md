@@ -5,7 +5,7 @@
 <p>Todo desenvolvedor alguma vez na vida, precisa criar uma forma de mostrar seu trabalho, de preferência centralizado em um único projeto, assim facilita para mostrar o seu trabalho e do que é capaz, foi um projeto que custou muitas horas, mas também muito aprendizado.</p>
 
 <p align="center">
-  <img src="/public/portfolioGif.gif"/>
+  <img src="/public/image.png"/>
 </p>
 <p align="center"><i>Screenshot da tela.</i></p>
 
