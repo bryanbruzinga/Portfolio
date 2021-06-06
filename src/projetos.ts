@@ -13,6 +13,14 @@ export const projects = [
             "description": "Aplicativo simples de E-commerce com operações de adicionar e remover ítens do carrinho e organizar a lista de produtos.",
             "github": "https://github.com/bryanbruzinga/E-commerce-Game-React",
             "site": "https://inspiring-snyder-8dfdc3.netlify.app/",
+            "techs": "React, Css, Leaflet"
+        },
+        {
+            "id": "Mapa dos ônibus de São Paulo",
+            "img": "mapa.png",
+            "description": "Aplicativo que contém um mapa com a posição de todos os ônibus da Cidade de São Paulo, assim como o local das paradas utilizando a Api do Olho Vivo.",
+            "github": "https://github.com/bryanbruzinga/Mapa-Onibus",
+            "site": "https://mapa-vert.vercel.app/",
             "techs": "React, Css"
         },
         {
