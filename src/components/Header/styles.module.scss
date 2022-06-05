@@ -1,90 +1,98 @@
 .headerContainer {
-    height: 10vh;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  nav {
+    width: 70rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
-    nav {
-        width: 70rem;
-        display: flex;
-        justify-content: flex-end;
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      padding: 1rem;
+      align-items: center;
+      color: #fff;
+      font-size: 0;
+      margin: 10px;
+      position: relative;
+      z-index: 300;
 
-        button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            border-radius: 50%;
-            padding: 1rem;
-            align-items: center;
-            color: #fff;
-            font-size: 0;
-            margin: 10px;
-            position: relative;
-            z-index: 300;
+      &::before {
+        margin-right: 4px;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        background: #fff;
+        box-shadow: 0 4px #fff, 0 -4px #fff;
+        transition: transform 0.3s;
+      }
 
-            &::before {
-                margin-right: 4px;
-                content: '';
-                display: inline-block;
-                height: 2px;
-                width: 12px;
-                background: #fff;
-                box-shadow: 0 4px #fff, 0 -4px #fff;
-                transition: transform .3s;
-            }
-
-            @media (min-width: 750px) {
-                display: none;
-            }
-        }
-
-        ul {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            animation: show-up .2s ease-in;
-            
-            @media (max-width: 750px) {
-                display: none;
-
-                &.active {
-                    display: flex;
-                    flex-direction: column;
-                    position: absolute;
-                    top: 10%;
-                    left: 0;
-                    z-index: 5;
-                    background: rgba(0, 0, 0, .95);
-                    width: 100%;
-                    height: 40vh;
-    
-                    li {
-                        margin-bottom: .5rem;
-                    }
-                }
-            }           
-
-            a {
-                padding: .5rem 1rem;
-                font-size: 1.125rem;
-                color: #EBEBED;
-                font-family: var(--primary-font);
-                transition: color .2s ease-in;
-
-                &:hover {
-                    color: var(--button);
-                }
-            }
-        }
+      @media (min-width: 750px) {
+        display: none;
+      }
     }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      animation: show-up 0.2s ease-in;
+
+      a {
+        &.active {
+          color: var(--button);
+          border-bottom: 3px solid var(--button);
+        }
+      }
+
+      @media (max-width: 750px) {
+        display: none;
+
+        &.active {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 10%;
+          left: 0;
+          z-index: 5;
+          background: rgba(0, 0, 0, 0.95);
+          width: 100%;
+          height: 40vh;
+
+          li {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+
+      a {
+        padding: 0.5rem 1rem;
+        font-size: 1.125rem;
+        color: #ebebed;
+        font-family: var(--primary-font);
+        transition: color 0.2s ease-in;
+
+        &:hover {
+          color: var(--button);
+        }
+      }
+    }
+  }
 }
 
 @keyframes show-up {
-    from {
-        opacity: 0;
-        transform: translateX(-200px);
-      } to {
-        opacity: 1;
-        transform: translateX(initial);
-      }
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(initial);
+  }
 }

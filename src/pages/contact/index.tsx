@@ -8,7 +8,7 @@ import { FiGithub } from "react-icons/fi";
 import { ImWhatsapp } from "react-icons/im";
 import { SiGmail } from "react-icons/si";
 import Form from "../../components/Form/Index";
-import { Fade } from 'react-reveal'
+import { Fade } from "react-reveal";
 
 const index = () => {
   const defaultOptions = {
@@ -23,12 +23,12 @@ const index = () => {
   return (
     <section className={styles.sectionContact}>
       <Form />
-      <Fade right>  
+      <Fade right>
         <div className={styles.contact}>
           <h1>Fale comigo</h1>
           <Lottie options={defaultOptions} height={400} width={400} />
           <div className={styles.containerContact}>
-            <Link href="https://www.linkedin.com/in/bryan-da-silva-bruzinga-b6830960/">
+            <Link href="https://www.linkedin.com/in/bryanbruzinga/">
               <a target="__blank">
                 <GrLinkedinOption />
               </a>
@@ -50,7 +50,7 @@ const index = () => {
             </Link>
           </div>
         </div>
-      </Fade>    
+      </Fade>
     </section>
   );
 };
